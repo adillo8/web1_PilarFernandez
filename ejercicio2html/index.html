@@ -3,110 +3,125 @@
 <head>
   <meta charset="UTF-8">
   <meta name="description" content="Pagina de ejercicio sobre Dead by Daylight">
-  <meta name="keywords" content="HTML, Dead by Daylight, ejercicio">
+  <meta name="keywords" content="HTML, CSS, Dead by Daylight, ejercicio">
   <meta name="author" content="Pilar Fernandez">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dead by Daylight</title>
   <link rel="icon" type="image/svg" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <header>
     <h1>Dead by Daylight</h1>
-    <p>Pagina de ejercicio de HTML</p>
+    <p>Pagina de ejercicio de HTML y CSS</p>
+    <img src="img/killer.jpg" alt="Imagen de un asesino de Dead by Daylight" width="220" height="220" class="img-header">
   </header>
 
-  <nav>
-    <a href="#intro">Introduccion</a>
-    <a href="#roles">Roles</a>
-    <a href="#objetivos">Objetivos</a>
-    <a href="#formulario">Formulario</a>
-  </nav>
+  <div class="pagina">
 
-  <section id="intro">
-    <h2>Que es Dead by Daylight?</h2>
-    <!-- Introduccion al juego -->
-    <p><strong>Dead by Daylight</strong> es un videojuego de terror asimetrico multijugador.<br>
-    En cada partida participan cuatro <em>supervivientes</em> y un <em>asesino</em>.</p>
-  </section>
+    <nav>
+      <a href="#intro">Introduccion</a>
+      <a href="#roles">Roles</a>
+      <a href="#objetivos">Objetivos</a>
+      <a href="#formulario">Formulario</a>
+    </nav>
 
-  <section id="roles">
-    <article>
-      <h3>Superviviente</h3>
-      <p>Debe reparar generadores y escapar sin ser atrapado.</p>
-    </article>
-    <article>
-      <h3>Asesino</h3>
-      <p>Debe encontrar y sacrificar a los supervivientes.</p>
-    </article>
-    <aside>
-      <h4>Dato curioso</h4>
-      <p><small>El juego salio en el año 2016.</small></p>
-    </aside>
-  </section>
+    <div class="contenido">
 
-  <section id="objetivos">
-    <h2>Objetivos segun el rol</h2>
-    <ol>
-      <li>Reparar 5 generadores</li>
-      <li>Abrir las puertas de salida</li>
-      <li>Escapar del escenario</li>
-    </ol>
+      <section id="intro">
+        <h2>Que es Dead by Daylight?</h2>
+        <!-- Introduccion al juego -->
+        <p><span class="destacado">Dead by Daylight</span> es un videojuego de terror asimetrico multijugador.<br>
+        En cada partida participan cuatro <em>supervivientes</em> y un <em>asesino</em>.</p>
+      </section>
 
-    <h3>Elementos del mapa</h3>
-    <ul>
-      <li>Generadores</li>
-      <li>Cofres</li>
-      <li>Totems</li>
-    </ul>
+      <section id="roles">
+        <article>
+          <h3>Superviviente</h3>
+          <p>Debe reparar generadores y escapar sin ser atrapado.</p>
+          <img src="img/survivors.jpg" alt="Grupo de supervivientes de Dead by Daylight" width="260" height="160" class="img-role">
+        </article>
+        <article>
+          <h3>Asesino</h3>
+          <p>Debe encontrar y sacrificar a los supervivientes.</p>
+        </article>
+        <aside class="dato-curioso">
+          <h4>Dato curioso</h4>
+          <p><small>El juego salio en el año 2016.</small></p>
+        </aside>
+      </section>
 
-    <dl>
-      <dt>Totem maldito</dt>
-      <dd>Otorga una ventaja al asesino</dd>
-      <dt>Totem de la esperanza</dt>
-      <dd>Otorga una ventaja a los supervivientes</dd>
-    </dl>
+      <section id="objetivos">
+        <h2>Objetivos segun el rol</h2>
+        <ol>
+          <li>Reparar 5 generadores</li>
+          <li>Abrir las puertas de salida</li>
+          <li>Escapar del escenario</li>
+        </ol>
 
-    <table>
-      <tr>
-        <th>Situacion</th>
-        <th>Consejo</th>
-      </tr>
-      <tr>
-        <td>Persecucion</td>
-        <td>Usa ventanas y pales</td>
-      </tr>
-      <tr>
-        <td>Reparar generador</td>
-        <td>Hazlo en grupo</td>
-      </tr>
-    </table>
-  </section>
+        <h3>Elementos del mapa</h3>
+        <ul>
+          <li>Generadores</li>
+          <li>Cofres</li>
+          <li>Totems</li>
+        </ul>
 
-  <section id="formulario">
-    <h2>Que rol prefieres?</h2>
-    <form action="/enviar.php" method="get">
+        <dl>
+          <dt>Totem maldito</dt>
+          <dd>Otorga una ventaja al asesino</dd>
+          <dt>Totem de la esperanza</dt>
+          <dd>Otorga una ventaja a los supervivientes</dd>
+        </dl>
 
-      <label for="nombre">Tu nombre:</label>
-      <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required minlength="2" maxlength="30"><br>
+        <table class="tabla-consejos">
+          <tr>
+            <th>Situacion</th>
+            <th>Consejo</th>
+          </tr>
+          <tr>
+            <td>Persecucion</td>
+            <td>Usa ventanas y pales</td>
+          </tr>
+          <tr>
+            <td>Reparar generador</td>
+            <td>Hazlo en grupo</td>
+          </tr>
+        </table>
+      </section>
 
-      <label>Rol favorito:</label>
-      <input type="radio" name="rol" value="superviviente"> Superviviente
-      <input type="radio" name="rol" value="asesino"> Asesino<br>
+      <section id="formulario">
+        <h2>Que rol prefieres?</h2>
+        <form action="/enviar.php" method="get">
 
-      <label for="asesino_input">Asesino favorito:</label>
-      <input type="text" id="asesino_input" list="asesinos">
-      <datalist id="asesinos">
-        <option value="Trapper">
-        <option value="Wraith">
-        <option value="Hillbilly">
-      </datalist><br>
+          <label for="nombre">Tu nombre:</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required minlength="2" maxlength="30">
 
-      <input type="checkbox" name="notificaciones"> Quiero recibir notificaciones<br>
+          <label>Rol favorito:</label>
+          <input type="radio" name="rol" value="superviviente"> Superviviente
+          <input type="radio" name="rol" value="asesino"> Asesino
 
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
+          <label for="asesino_input">Asesino favorito:</label>
+          <input type="text" id="asesino_input" list="asesinos">
+          <datalist id="asesinos">
+            <option value="Trapper">
+            <option value="Wraith">
+            <option value="Hillbilly">
+          </datalist>
+
+          <label><input type="checkbox" name="notificaciones"> Quiero recibir notificaciones</label>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+
+    </div>
+
+  </div>
+
+  <footer>
+    <p>Pagina creada como ejercicio de HTML y CSS.</p>
+  </footer>
 
 </body>
 </html>

@@ -1,0 +1,177 @@
+/* ===== Estilos generales ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222222;
+  background-color: #f4f1ec;
+  line-height: 1.5;
+}
+
+::selection {
+  background-color: #b3141c;
+  color: #ffffff;
+}
+
+/* ===== Cabecera ===== */
+header {
+  background-color: #b3141c;
+  color: #ffffff;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+header h1 {
+  margin: 0 0 8px;
+  font-size: 42px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+header p {
+  margin: 0;
+  font-style: italic;
+}
+
+/* Contenedor que agrupa el menu y el contenido para contener los floats */
+.pagina {
+  overflow: hidden;
+}
+
+/* ===== Menu lateral ===== */
+nav {
+  float: left;
+  width: 200px;
+  background-color: #222222;
+  padding: 20px 0;
+}
+
+nav > a {
+  display: block;
+  padding: 12px 20px;
+  color: #f4f1ec;
+  text-decoration: none;
+  border-bottom: 1px solid #3a3a3a;
+}
+
+nav > a:first-child {
+  border-top: 1px solid #3a3a3a;
+}
+
+nav > a:last-child {
+  border-bottom: none;
+}
+
+nav a:hover {
+  background-color: #b3141c;
+  color: #ffffff;
+}
+
+/* ===== Contenido principal ===== */
+.contenido {
+  margin-left: 200px;
+  padding: 20px 30px;
+}
+
+section {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+h2, h3 {
+  color: #b3141c;
+}
+
+h2::first-letter {
+  font-size: 1.4em;
+}
+
+h2 + p {
+  margin-top: 0;
+}
+
+h3 ~ ul {
+  color: #444444;
+}
+
+/* ===== Clases ===== */
+span.destacado {
+  color: #b3141c;
+  font-weight: bold;
+}
+
+.dato-curioso {
+  background-color: #f4f1ec;
+  border: 1px dashed #b3141c;
+  padding: 10px;
+}
+
+table.tabla-consejos {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table.tabla-consejos th,
+table.tabla-consejos td {
+  border: 1px solid #dddddd;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+table.tabla-consejos th {
+  background-color: #222222;
+  color: #ffffff;
+}
+
+/* ===== Formulario ===== */
+#formulario label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  padding: 6px;
+  border: 1px solid #cccccc;
+  width: 250px;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+input[required] {
+  border-left: 3px solid #b3141c;
+}
+
+input:focus {
+  outline: none;
+  border-color: #b3141c;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #b3141c;
+  color: #ffffff;
+  border: none;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #8f0f16;
+}
+
+/* ===== Pie de pagina ===== */
+footer {
+  background-color: #222222;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+}
