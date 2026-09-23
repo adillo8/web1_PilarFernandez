@@ -1,0 +1,23 @@
+:root {
+  --accent: #b3141c;
+}
+
+.hero {
+  background: linear-gradient(180deg, #000 0%, #1c1917 100%);
+  border-bottom: 3px solid var(--accent);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.btn-danger {
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+
+.card-title .badge {
+  font-size: 0.7em;
+  vertical-align: middle;
+}
