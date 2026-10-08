@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Registro DBD - jQuery</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>DEAD BY DAYLIGHT</h1>
+    <p>Página de la Niebla — ejercicio jQuery</p>
+  </header>
+
+  <main>
+    <p id="confirmacion"></p>
+
+    <!-- Contenido principal (se oculta al pulsar "Registrarse") -->
+    <div id="principal">
+      <h2>Bienvenido a la Niebla</h2>
+      <p>Dead by Daylight es un juego de terror asimétrico: cuatro supervivientes intentan reparar generadores y escapar mientras un asesino los persigue.</p>
+      <ul>
+        <li>Los supervivientes reparan 5 generadores.</li>
+        <li>El asesino cuelga a los supervivientes en los ganchos.</li>
+        <li>Las puertas de salida se abren cuando se terminan los generadores.</li>
+      </ul>
+      <button id="btnRegistro">Registrarse</button>
+    </div>
+
+    <!-- Formulario de registro (oculto al principio) -->
+    <div id="registro">
+      <h2>Registro de superviviente</h2>
+      <form id="formRegistro" novalidate>
+        <div class="campo">
+          <label for="nombre">Nombre y apellidos</label>
+          <input type="text" id="nombre">
+          <span class="error" id="errorNombre"></span>
+        </div>
+        <div class="campo">
+          <label for="email">Email</label>
+          <input type="text" id="email">
+          <span class="error" id="errorEmail"></span>
+        </div>
+        <div class="campo">
+          <label for="telefono">Teléfono</label>
+          <input type="text" id="telefono">
+          <span class="error" id="errorTelefono"></span>
+        </div>
+        <div class="campo">
+          <label for="password">Contraseña</label>
+          <input type="password" id="password">
+          <span class="error" id="errorPassword"></span>
+        </div>
+        <button type="submit" id="btnEnviar">Enviar</button>
+        <button type="button" id="btnCancelar">Cancelar</button>
+      </form>
+    </div>
+  </main>
+</body>
+</html>

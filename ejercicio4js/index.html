@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Generador de contraseñas DBD</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>Generador de contraseñas DBD</h1>
+    <p>Genera una contraseña uniendo palabras aleatorias del universo de Dead by Daylight.</p>
+
+    <div class="panel">
+      <label for="cantidad">Número de palabras:</label>
+      <input type="number" id="cantidad" value="4" min="1" max="10">
+
+      <label><input type="checkbox" id="mayusculas"> Empezar cada palabra en mayúscula</label>
+      <label><input type="checkbox" id="sinRepetir" checked> No repetir palabras</label>
+
+      <button id="generar">Generar contraseña</button>
+    </div>
+
+    <h2>Resultado</h2>
+    <p id="resultado">Pulsa el botón para generar una contraseña.</p>
+    <p id="aviso"></p>
+  </main>
+</body>
+</html>

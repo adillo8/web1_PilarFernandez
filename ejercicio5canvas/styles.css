@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background-color: #12100f;
+  color: #e8e2d8;
+}
+
+main {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+h1 { color: #b3141c; }
+
+canvas {
+  border: 3px solid #b3141c;
+  display: block;
+}
