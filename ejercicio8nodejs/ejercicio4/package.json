@@ -1,0 +1,15 @@
+{
+  "name": "scraping-libros",
+  "version": "1.0.0",
+  "description": "Ejercicio 4: web scraping de books.toscrape.com con cheerio",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": ["scraping", "cheerio", "libros"],
+  "author": "Pilar",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.2.0"
+  }
+}
